@@ -10,7 +10,7 @@
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -20,7 +20,7 @@
 
 textarea {
     resize: none;
-    flex: 3;
+    flex: 2;
     height: 80vh;
     padding: 16px;
     font-size: 1.2rem;
@@ -38,13 +38,13 @@ textarea {
 }
 
 button {
-    width: 150px;
+    width: 130px;
     background-color: #46858f;
     color: #f9f9f9;
     font-size: 1.2rem;
     border: none;
     border-radius: 8px;
-    padding: 16px;
+    padding: 12px;
     cursor: pointer;
 }
 
