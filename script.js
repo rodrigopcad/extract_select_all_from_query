@@ -5,10 +5,19 @@ function generateScript() {
         .map(v => 'SELECT * FROM ' + v)
         .join('\n');
     document.querySelector('#result').value = match;
-    navigator.clipboard.writeText(match);
     const modal = document.querySelector('#dialog');
-    modal.showModal();
 
+    if (match.length > 0) {
+        modal.querySelector('h2').innerText = 'Lista de SELECTs gerada.\nCopiado para a área de transferência.'
+        navigator.clipboard.writeText(match);
+    }
+
+
+    if (match.length === 0) {
+        modal.querySelector('h2').innerText = 'Não há SELECTs para copiar.'
+    }
+
+    modal.showModal();
 
     setTimeout(() => {
         modal.classList.add('hide');
