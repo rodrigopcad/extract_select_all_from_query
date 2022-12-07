@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.header {
+    margin: 32px;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
