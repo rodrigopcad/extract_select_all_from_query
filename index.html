@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT * FROM TABLE</title>
+</head>
+
+<body>
+    <div class="container">
+        <textarea id="query"></textarea>
+        <div class="buttons">
+            <button onclick="paste()">Colar</button>
+            <button onclick="generateScript()">Gerar/Copiar</button>
+        </div>
+        <textarea id="result" disabled></textarea>
+    </div>
+
+    <dialog id="dialog">
+        <h2>Lista de <code>SELECTs</code> gerada.<br />Copiado para a área de transferência.</h2>
+    </dialog>
+</body>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</html>
