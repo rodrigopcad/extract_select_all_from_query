@@ -5,19 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SELECT * FROM TABLE</title>
+    <title>Gerar Selects</title>
 </head>
 
 <body>
-    <div class="header">
+    <div>
         <h1>Extração de <code>SELECTs</code> para depuração.</h1>
     </div>
+
+    <div>
+        <p>Clique no botão "Colar" ou escreva a query no input.</p>
+        <p> Depois clique botão "Gerar / Copiar"</p>
+    </div>
+
+    <div class="buttons">
+        <button onclick="paste()">Colar</button>
+        <button onclick="generateScript()">Gerar / Copiar</button>
+    </div>
+
     <div class="container">
-        <textarea id="query"></textarea>
-        <div class="buttons">
-            <button onclick="paste()">Colar</button>
-            <button onclick="generateScript()">Gerar/Copiar</button>
-        </div>
+        <textarea id="query" placeholder="Escreva aqui a query."></textarea>
         <textarea id="result" disabled></textarea>
     </div>
 
